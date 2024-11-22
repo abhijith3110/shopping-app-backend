@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import { connectDB } from './configs/dbConfig.js'
 import categoryRouter from './routes/v1/categoryRoute.js'
 import {notFound, errorHandler} from "./middlewares/errorMiddleware.js"
+import productRouter from './routes/v1/productRoute.js'
 
 const app = express()
 
@@ -12,6 +13,7 @@ connectDB()
 app.use(express.json())
 
 app.use('/api/v1/category', categoryRouter)
+app.use('/api/v1/product', productRouter)
 app.use(notFound)
 app.use(errorHandler)
 
