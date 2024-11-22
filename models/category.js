@@ -6,7 +6,7 @@ const categorySchema = new mongoose.Schema(
 
         name: {
             type: String,
-            enum: ['men', 'women', 'kids'],
+            enum: ['mens', 'womens', 'kids'],
             required: true
         },
 
