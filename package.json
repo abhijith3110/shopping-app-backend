@@ -1,0 +1,16 @@
+{
+  "name": "shopping-app",
+  "version": "1.0.0",
+  "description": "Shopping Application",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "t",
+    "start": "nodemon app.js"
+  },
+  "author": "Abhijith Anil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
