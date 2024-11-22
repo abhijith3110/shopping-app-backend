@@ -1,5 +1,5 @@
 import express from 'express'
-import { createCategory, listCategories } from '../../controllers/v1/category.js'
+import { createCategory, listCategories } from '../../controllers/v1/categoryController.js'
 import {uploadImage} from "../../middlewares/multer/fileUpload.js"
 
 const categoryRouter = express.Router()
